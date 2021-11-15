@@ -3,6 +3,9 @@ public class Bear {
     private String name;
     private int age;
     private double weight;
+//    private char sex;
+//
+//    sex = 'f';
 
 
     public Bear(String name, int age, double weight){
@@ -33,5 +36,15 @@ public class Bear {
 
     public void setWeight(double weight) {
         this.weight = weight;
+    }
+
+    public boolean readyToHibernate() {
+//        if (this.weight >= 80) {
+//            return true;
+//        }else{
+//            return false;
+//        }
+//        return this.weight >= 80 ? true:false;
+        return this.weight >= 80;
     }
 }

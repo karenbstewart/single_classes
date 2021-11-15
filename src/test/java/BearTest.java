@@ -27,5 +27,16 @@ public class BearTest {
         assertEquals(95.62, bear.getWeight(), 0.01);
     }
 
+    @Test
+    public void readyToHibernateOver80(){
+        assertEquals(true, bear.readyToHibernate());
+    }
+
+    @Test
+    public void notReadyToHibernateOver80(){
+        Bear thinBear = new Bear("Bubu", 9, 25.02);
+        assertEquals(false, thinBear.readyToHibernate());
+    }
+
 
 }
