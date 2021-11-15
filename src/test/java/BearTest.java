@@ -48,7 +48,7 @@ public class BearTest {
 
         String str1 = "first";
         String str2 = str1;
-        str2 = "second";
+        str2 ="second";
 
         System.out.println(bear1);
         System.out.println(bear2);
@@ -59,7 +59,7 @@ public class BearTest {
         System.out.println(age2);
 
         System.out.println(str1);
-        System.out.println(str2);
+        System.out.println(str2.toUpperCase());
 
     }
 
